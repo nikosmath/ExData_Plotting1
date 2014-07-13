@@ -33,7 +33,7 @@
 
 
 # Folder path
-setwd('~/Desktop/Exp_data_1/')
+setwd('~/Desktop/ExData_Plotting1/')
 
 # Read all the data from the text file
 hpc<-read.table('household_power_consumption.txt',na.strings="?", sep=';', header = T)
@@ -52,7 +52,7 @@ hpc_Data$Time_N<-strptime(hpc_Data$Timestamp, "%d/%m/%Y %H:%M:%S")
 
 
 # Open the export device PNG 
-png(file = "~/Desktop/Exp_data_1/figure/plot1.png",height=480,width=480, bg = "white")
+png(file = "~/Desktop/ExData_Plotting1/figure/plot1.png",height=480,width=480, bg = "white")
 
 # Add the histogram
 hist(hpc_Data$Global_active_power,breaks=20,col='red',
